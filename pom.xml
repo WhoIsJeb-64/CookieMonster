@@ -37,12 +37,6 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-
     </repositories>
 
     <build>
@@ -87,9 +81,11 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.zavdav</groupId>
-            <artifactId>ZCore</artifactId>
-            <version>367d509</version>
+            <groupId>me.zavdav</groupId>
+            <artifactId>zcore</artifactId>
+            <version>0.22.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/zcore-0.22.1.jar</systemPath>
         </dependency>
 
     </dependencies>
