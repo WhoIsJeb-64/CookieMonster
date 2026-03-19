@@ -3,6 +3,7 @@ package com.nijikokun.register_21.payment;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.nijikokun.register_21.payment.methods.AurumEconomy;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 
@@ -25,7 +26,7 @@ import org.bukkit.plugin.PluginManager;
  *
  * @author: Nijikokun <nijikokun@shortmail.com> (@nijikokun)
  * @copyright: Copyright (C) 2011
- * @license: AOL license <http://aol.nexua.org>
+ * @license: AOL license <<a href="http://aol.nexua.org">...</a>>
  */
 public class Methods {
     private boolean self = false;
@@ -63,14 +64,7 @@ public class Methods {
      * @see #Methods(java.lang.String)
      */
     private void _init() {
-        //this.addMethod("iConomy", new com.nijikokun.register_21.payment.methods.iCo6());
-        //this.addMethod("iConomy", new com.nijikokun.register_21.payment.methods.iCo5());
-        //this.addMethod("iConomy", new com.nijikokun.register_21.payment.methods.iCo4());
-        //this.addMethod("BOSEconomy", new com.nijikokun.register_21.payment.methods.BOSE6());
-        //this.addMethod("BOSEconomy", new com.nijikokun.register_21.payment.methods.BOSE7());
-        this.addMethod("Essentials", new com.nijikokun.register_21.payment.methods.EE17());
-        this.addMethod("ZCore", new com.nijikokun.register_21.payment.methods.ZCoreEconomy());
-        //this.addMethod("MultiCurrency", new com.nijikokun.register_21.payment.methods.MCUR());
+        this.addMethod("Aurum", new AurumEconomy());
     }
 
     /**
